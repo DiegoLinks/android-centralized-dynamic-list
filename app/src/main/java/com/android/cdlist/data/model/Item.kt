@@ -1,4 +1,4 @@
-package com.android.cdlist.data
+package com.android.cdlist.data.model
 
 data class Item(
     val imageUrl: String,
