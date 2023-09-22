@@ -1,4 +1,4 @@
-package com.android.cdlist
+package com.android.cdlist.ui.helper
 
 import android.view.View
 
