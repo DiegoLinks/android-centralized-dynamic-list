@@ -1,10 +1,11 @@
-package com.android.cdlist
+package com.android.cdlist.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.android.cdlist.R
 import com.android.cdlist.data.model.DescriptionCardItem
 
 class DescriptionAdapter(
