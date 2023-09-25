@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">Centralized Dynamic List</string>
-    <string name="horizontal_centralized_list_title">Título da opção</string>
-    <string name="horizontal_centralized_list_description">Descricão da opcão, esse campo serve pra falar um pouco sobre o componente e formas de uso do mesmo, que será exibido com exemplos na tela seguinte ao clicar nesse card.</string>
+    <string name="app_name" translatable="false">Centralized Dynamic List</string>
+    <string name="horizontal_centralized_list_title">Basic Implementation</string>
+    <string name="horizontal_centralized_list_description">Click to see the most basic implementation using the HorizontalCentralizedList component to dynamically center items while filling the entire horizontal space.</string>
+    <string name="horizontal_centralized_list_coil_title">Basic Implementation with Coil</string>
+    <string name="horizontal_centralized_list_coil_description">Click to see the most basic implementation using the CustomHorizontalCentralizedList component to dynamically center items while filling the entire horizontal space using Coil.</string>
+    <string name="custom_horizontal_centralized_list_title">Custom Implementation</string>
+    <string name="custom_horizontal_centralized_list_description">CustomHorizontalCentralizedList to dynamically center items while filling the entire horizontal space using custom settings.</string>
+    <string name="bottom_navigation_centralized_list_title">Bottom Navigation Implementation</string>
+    <string name="bottom_navigation_centralized_list_description">Click to see the implementation of the BottomNavigationCentralizedList component created to dynamically center items within a base component for a Bottom Navigation.</string>
 </resources>
