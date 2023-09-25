@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Centralized Dynamic List</string>
+    <string name="horizontal_centralized_list_title">Título da opção</string>
+    <string name="horizontal_centralized_list_description">Descricão da opcão, esse campo serve pra falar um pouco sobre o componente e formas de uso do mesmo, que será exibido com exemplos na tela seguinte ao clicar nesse card.</string>
 </resources>
