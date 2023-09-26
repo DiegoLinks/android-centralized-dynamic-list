@@ -2,39 +2,33 @@ package com.android.cdlist.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.android.cdlist.R
-import com.android.cdlist.component.HorizontalCentralizedList
-import com.android.cdlist.data.repository.getCardData
-import com.android.cdlist.data.repository.medalList
+import com.android.cdlist.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var centralizedList: HorizontalCentralizedList
-    private lateinit var recyclerView: RecyclerView
+    private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        centralizedList = findViewById(R.id.centralized_list)
+        setSupportActionBar(binding.toolbar)
 
-        centralizedList.setItems(medalList)
-
-        //---//
-
-        recyclerView = findViewById(R.id.recycler_view)
-
-        val adapter = DescriptionAdapter(getCardData(this)) {
-            val route = it.id
-            navigate(route = route)
-        }
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
-    private fun navigate(route: Int) {
-        //TODO navigate
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        return navController.navigateUp(appBarConfiguration)
+                || super.onSupportNavigateUp()
     }
 }
