@@ -7,4 +7,7 @@
     <string name="custom_horizontal_centralized_list_description">CustomHorizontalCentralizedList para centralizar itens de forma dinâmica preenchendo todo o espaço horizontal usando configurações personalizadas.</string>
     <string name="bottom_navigation_centralized_list_title">Implementação do Bottom Navigation</string>
     <string name="bottom_navigation_centralized_list_description">Clique para ver a implementação do componente BottomNavigationCentralizedList criado para centralizar itens de forma dinâmica em um componente base para um Bottom Navigation.</string>
+
+    <string name="home_fragment_label">Centralized Dynamic List</string>
+    <string name="basic_implementation_fragment_label">Implementação básica</string>
 </resources>

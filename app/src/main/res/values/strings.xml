@@ -8,4 +8,7 @@
     <string name="custom_horizontal_centralized_list_description">CustomHorizontalCentralizedList to dynamically center items while filling the entire horizontal space using custom settings.</string>
     <string name="bottom_navigation_centralized_list_title">Bottom Navigation Implementation</string>
     <string name="bottom_navigation_centralized_list_description">Click to see the implementation of the BottomNavigationCentralizedList component created to dynamically center items within a base component for a Bottom Navigation.</string>
+
+    <string name="home_fragment_label">Centralized Dynamic List</string>
+    <string name="basic_implementation_fragment_label">Basic Implementation</string>
 </resources>
