@@ -10,5 +10,10 @@
     <string name="bottom_navigation_centralized_list_description">Click to see the implementation of the BottomNavigationCentralizedList component created to dynamically center items within a base component for a Bottom Navigation.</string>
 
     <string name="home_fragment_label">Centralized Dynamic List</string>
-    <string name="basic_implementation_fragment_label">Basic Implementation</string>
+    <string name="basic_impl_fragment_label">Basic Implementation</string>
+
+    <string name="button_less_label">Remove item</string>
+    <string name="button_more_label">Add item</string>
+
+    <string name="basic_impl_fragment_content">Here we have an example with the basic implementation using the HorizontalCentralizedList component to dynamically center items while filling the entire horizontal space.\n\nIn this case, a list is displayed that can have from 0 to 6 items (in this case, there are 5). Regardless of the quantity, the items will always be dynamically centered.\n\nYou can click on the buttons below to increase or decrease the number of items from 1 to 6, to see the possibilities of using the component.</string>
 </resources>

@@ -12,17 +12,12 @@
         tools:layout="@layout/fragment_home">
 
         <action
-            android:id="@+id/action_HomeFragment_to_BasicImplementationFragment"
-            app:destination="@id/BasicImplementationFragment" />
+            android:id="@+id/action_HomeFragment_to_BasicImplFragment"
+            app:destination="@id/BasicImplFragment" />
     </fragment>
     <fragment
-        android:id="@+id/BasicImplementationFragment"
-        android:name="com.android.cdlist.ui.BasicImplementationFragment"
-        android:label="@string/basic_implementation_fragment_label"
-        tools:layout="@layout/fragment_basic_implementation">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/HomeFragment" />
-    </fragment>
+        android:id="@+id/BasicImplFragment"
+        android:name="com.android.cdlist.ui.BasicImplFragment"
+        android:label="@string/basic_impl_fragment_label"
+        tools:layout="@layout/fragment_basic_impl"/>
 </navigation>
