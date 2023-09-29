@@ -5,10 +5,11 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatImageView
+import coil.load
 import com.android.cdlist.data.model.Item
 import com.android.cdlist.R
+import com.android.cdlist.ui.helper.gone
 import com.android.cdlist.ui.helper.visible
-import com.bumptech.glide.Glide
 
 class HorizontalCentralizedList @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
@@ -28,12 +29,14 @@ class HorizontalCentralizedList @JvmOverloads constructor(
             findViewById(R.id.iv_item_6)
         )
 
+        imageViews.forEach { it.gone() }
+
         for ((index, item) in items.withIndex()) {
             if (index >= imageViews.size) {
                 break
             }
             val imageView = imageViews[index]
-            Glide.with(context).load(item.imageUrl).into(imageView)
+            imageView.load(item.imageUrl)
             imageView.visible()
         }
     }
