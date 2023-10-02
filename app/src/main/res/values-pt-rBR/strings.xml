@@ -10,9 +10,14 @@
 
     <string name="home_fragment_label">Centralized Dynamic List</string>
     <string name="basic_impl_fragment_label">Implementação básica</string>
+    <string name="basic_impl_coil_fragment_label">Implementação básica com Coil</string>
+    <string name="custom_imp_fragment_label">Implementação personalizada</string>
 
     <string name="button_less_label">Remover item</string>
     <string name="button_more_label">Adicionar item</string>
+
+    <string name="button_prev_label">Anterior</string>
+    <string name="button_next_label">Próximo</string>
 
     <string name="basic_impl_fragment_content">Aqui temos um exemplo com a implementação básica usando o componente HorizontalCentralizedList para centralizar itens de forma dinâmica preenchendo todo o espaço horizontal.\n\nNesse caso é exibida uma lista que pode ter de 0 a 6 itens (no caso são 5), independente da quantidade os itens sempre serão centralizados de forma dinâmica.\n\nVocê pode clicar nos botões abaixo para aumentar ou diminuir a quantidade dos itens indo de 1 a 6, para visualizar as possibilidades de uso do componente.</string>
 </resources>

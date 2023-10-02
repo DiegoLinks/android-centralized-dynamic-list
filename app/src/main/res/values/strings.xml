@@ -11,9 +11,14 @@
 
     <string name="home_fragment_label">Centralized Dynamic List</string>
     <string name="basic_impl_fragment_label">Basic Implementation</string>
+    <string name="basic_impl_coil_fragment_label">Basic Implementation with Coil</string>
+    <string name="custom_imp_fragment_label">Custom Implementation</string>
 
     <string name="button_less_label">Remove item</string>
     <string name="button_more_label">Add item</string>
+
+    <string name="button_prev_label">Previous</string>
+    <string name="button_next_label">Next</string>
 
     <string name="basic_impl_fragment_content">Here we have an example with the basic implementation using the HorizontalCentralizedList component to dynamically center items while filling the entire horizontal space.\n\nIn this case, a list is displayed that can have from 0 to 6 items (in this case, there are 5). Regardless of the quantity, the items will always be dynamically centered.\n\nYou can click on the buttons below to increase or decrease the number of items from 1 to 6, to see the possibilities of using the component.</string>
 </resources>
