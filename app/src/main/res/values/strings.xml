@@ -2,8 +2,6 @@
     <string name="app_name" translatable="false">Centralized Dynamic List</string>
     <string name="horizontal_centralized_list_title">Basic Implementation</string>
     <string name="horizontal_centralized_list_description">Click to see the most basic implementation using the HorizontalCentralizedList component to dynamically center items while filling the entire horizontal space.</string>
-    <string name="horizontal_centralized_list_coil_title">Basic Implementation with Coil</string>
-    <string name="horizontal_centralized_list_coil_description">Click to see the most basic implementation using the CustomHorizontalCentralizedList component to dynamically center items while filling the entire horizontal space using Coil.</string>
     <string name="custom_horizontal_centralized_list_title">Custom Implementation</string>
     <string name="custom_horizontal_centralized_list_description">CustomHorizontalCentralizedList to dynamically center items while filling the entire horizontal space using custom settings.</string>
     <string name="bottom_navigation_centralized_list_title">Bottom Navigation Implementation</string>
@@ -11,7 +9,6 @@
 
     <string name="home_fragment_label">Centralized Dynamic List</string>
     <string name="basic_impl_fragment_label">Basic Implementation</string>
-    <string name="basic_impl_coil_fragment_label">Basic Implementation with Coil</string>
     <string name="custom_imp_fragment_label">Custom Implementation</string>
 
     <string name="button_less_label">Remove item</string>

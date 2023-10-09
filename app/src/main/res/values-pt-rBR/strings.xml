@@ -1,8 +1,6 @@
 <resources>
     <string name="horizontal_centralized_list_title">Implementação básica</string>
     <string name="horizontal_centralized_list_description">Clique para ver a implementação mais básica usando o componente HorizontalCentralizedList para centralizar itens de forma dinâmica preenchendo todo o espaço horizontal.</string>
-    <string name="horizontal_centralized_list_coil_title">Implementação básica com Coil</string>
-    <string name="horizontal_centralized_list_coil_description">Clique para ver a implementação mais básica usando o componente CustomHorizontalCentralizedList para centralizar itens de forma dinâmica preenchendo todo o espaço horizontal usando Coil.</string>
     <string name="custom_horizontal_centralized_list_title">Implementação personalizada</string>
     <string name="custom_horizontal_centralized_list_description">CustomHorizontalCentralizedList para centralizar itens de forma dinâmica preenchendo todo o espaço horizontal usando configurações personalizadas.</string>
     <string name="bottom_navigation_centralized_list_title">Implementação do Bottom Navigation</string>
@@ -10,7 +8,6 @@
 
     <string name="home_fragment_label">Centralized Dynamic List</string>
     <string name="basic_impl_fragment_label">Implementação básica</string>
-    <string name="basic_impl_coil_fragment_label">Implementação básica com Coil</string>
     <string name="custom_imp_fragment_label">Implementação personalizada</string>
 
     <string name="button_less_label">Remover item</string>

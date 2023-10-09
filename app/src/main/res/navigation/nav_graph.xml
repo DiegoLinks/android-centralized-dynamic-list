@@ -16,26 +16,19 @@
             app:destination="@id/BasicImplFragment" />
 
         <action
-            android:id="@+id/action_HomeFragment_to_BasicImplCoilFragment"
-            app:destination="@id/BasicImplCoilFragment" />
-
-        <action
             android:id="@+id/action_HomeFragment_to_CustomImplFragment"
             app:destination="@id/CustomImplFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/BasicImplFragment"
         android:name="com.android.cdlist.ui.BasicImplFragment"
         android:label="@string/basic_impl_fragment_label"
-        tools:layout="@layout/fragment_basic_impl"/>
-    <fragment
-        android:id="@+id/BasicImplCoilFragment"
-        android:name="com.android.cdlist.ui.BasicImplCoilFragment"
-        android:label="@string/basic_impl_coil_fragment_label"
-        tools:layout="@layout/fragment_basic_impl"/>
+        tools:layout="@layout/fragment_basic_impl" />
+
     <fragment
         android:id="@+id/CustomImplFragment"
         android:name="com.android.cdlist.ui.CustomImplFragment"
         android:label="@string/custom_imp_fragment_label"
-        tools:layout="@layout/fragment_custom_impl"/>
+        tools:layout="@layout/fragment_custom_impl" />
 </navigation>
