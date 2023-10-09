@@ -11,17 +11,25 @@ val trophyItem =
 val trophyDisabledItem =
     Item(imageUrl = "https://cdn-icons-png.flaticon.com/512/5987/5987898.png", isActive = false)
 
-val levelItem =
-    Item(
-        imageUrl = "https://static-00.iconduck.com/assets.00/green-square-emoji-512x512-rrh7w362.png",
-        isActive = true
-    )
+val levelItem = Item(
+    imageUrl = "https://static-00.iconduck.com/assets.00/green-square-emoji-512x512-rrh7w362.png",
+    isActive = true
+)
 
-val levelDisabledItem =
-    Item(
-        imageUrl = "https://static-00.iconduck.com/assets.00/green-square-emoji-512x512-rrh7w362.png",
-        isActive = false
-    )
+val levelDisabledItem = Item(
+    imageUrl = "https://static-00.iconduck.com/assets.00/green-square-emoji-512x512-rrh7w362.png",
+    isActive = false
+)
+
+val dropItem = Item(
+    imageUrl = "https://cdn1.iconfinder.com/data/icons/smallicons-weather/32/drop-512.png",
+    isActive = true
+)
+
+val dropDisabledItem = Item(
+    imageUrl = "https://cdn1.iconfinder.com/data/icons/smallicons-weather/32/drop-512.png",
+    isActive = false
+)
 
 val medalList = mutableListOf(medalItem, medalItem, medalItem, medalItem, medalItem)
 
@@ -31,4 +39,11 @@ val trophyList =
 val levelList =
     mutableListOf(levelItem, levelItem, levelItem, levelItem, levelDisabledItem, levelDisabledItem)
 
-
+val dropList = mutableListOf(
+    dropItem,
+    dropItem,
+    dropDisabledItem,
+    dropDisabledItem,
+    dropDisabledItem,
+    dropDisabledItem
+)

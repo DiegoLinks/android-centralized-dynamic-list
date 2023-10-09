@@ -36,7 +36,7 @@ class HorizontalCentralizedList @JvmOverloads constructor(
                 break
             }
             val imageView = imageViews[index]
-            imageView.load(item.imageUrl)
+            imageView.load(item.imageUrl)//Load with Coil
             imageView.visible()
         }
     }

@@ -1,7 +1,6 @@
 package com.android.cdlist.component
 
 import android.content.Context
-import android.graphics.ColorFilter
 import android.graphics.ColorMatrix
 import android.graphics.ColorMatrixColorFilter
 import android.util.AttributeSet
@@ -15,6 +14,8 @@ import com.android.cdlist.ui.helper.gone
 import com.android.cdlist.ui.helper.visible
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import jp.wasabeef.glide.transformations.BlurTransformation
+import jp.wasabeef.glide.transformations.GrayscaleTransformation
 
 class CustomHorizontalCentralizedList @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
@@ -24,16 +25,16 @@ class CustomHorizontalCentralizedList @JvmOverloads constructor(
         LayoutInflater.from(context).inflate(R.layout.item_centralized_list, this, true)
     }
 
-    fun setItems(items: List<Item>) {
-        val imageViews = mutableListOf<AppCompatImageView>(
-            findViewById(R.id.iv_item_1),
-            findViewById(R.id.iv_item_2),
-            findViewById(R.id.iv_item_3),
-            findViewById(R.id.iv_item_4),
-            findViewById(R.id.iv_item_5),
-            findViewById(R.id.iv_item_6)
-        )
+    private val imageViews = mutableListOf<AppCompatImageView>(
+        findViewById(R.id.iv_item_1),
+        findViewById(R.id.iv_item_2),
+        findViewById(R.id.iv_item_3),
+        findViewById(R.id.iv_item_4),
+        findViewById(R.id.iv_item_5),
+        findViewById(R.id.iv_item_6)
+    )
 
+    fun setItemsWithCoilBlackAndWithe(items: List<Item>) {
         imageViews.forEach { it.gone() }
 
         for ((index, item) in items.withIndex()) {
@@ -41,11 +42,11 @@ class CustomHorizontalCentralizedList @JvmOverloads constructor(
                 break
             }
             val imageView = imageViews[index]
-            configImage(item, imageView)
+            configImageWithCoilBlackAndWithe(item, imageView)
         }
     }
 
-    private fun configImage(item: Item, view: AppCompatImageView) {
+    private fun configImageWithCoilBlackAndWithe(item: Item, view: AppCompatImageView) {
         val matrix = ColorMatrix()
         matrix.setSaturation(0F)
         val colorFilter = ColorMatrixColorFilter(matrix)
@@ -60,7 +61,53 @@ class CustomHorizontalCentralizedList @JvmOverloads constructor(
         view.visible()
     }
 
-    //todo config imagem com Glide
+    fun setItemsWithGlideBlackAndWithe(items: List<Item>) {
+        imageViews.forEach { it.gone() }
 
-    //todo config image com coil
+        for ((index, item) in items.withIndex()) {
+            if (index >= imageViews.size) {
+                break
+            }
+            val imageView = imageViews[index]
+            configImageGlideBlackAndWithe(item, imageView)
+        }
+    }
+
+    private fun configImageGlideBlackAndWithe(item: Item, view: AppCompatImageView) {
+        if (item.isActive) {
+            Glide.with(context).load(item.imageUrl).into(view)
+        } else {
+            Glide.with(context)
+                .load(item.imageUrl)
+                .apply(RequestOptions.bitmapTransform(GrayscaleTransformation()))
+                .into(view)
+        }
+
+        view.visible()
+    }
+
+    fun setItemsWithGlideBlur(items: List<Item>) {
+        imageViews.forEach { it.gone() }
+
+        for ((index, item) in items.withIndex()) {
+            if (index >= imageViews.size) {
+                break
+            }
+            val imageView = imageViews[index]
+            configImageWithGlideBlur(item, imageView)
+        }
+    }
+
+    private fun configImageWithGlideBlur(item: Item, view: AppCompatImageView) {
+        if (item.isActive) {
+            Glide.with(context).load(item.imageUrl).into(view)
+        } else {
+            Glide.with(context)
+                .load(item.imageUrl)
+                .apply(RequestOptions.bitmapTransform(BlurTransformation(25, 3)))
+                .into(view)
+        }
+
+        view.visible()
+    }
 }

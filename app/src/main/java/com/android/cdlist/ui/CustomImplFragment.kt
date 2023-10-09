@@ -5,7 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.android.cdlist.component.CustomHorizontalCentralizedList
+import com.android.cdlist.data.repository.dropList
 import com.android.cdlist.data.repository.levelList
+import com.android.cdlist.data.repository.medalList
+import com.android.cdlist.data.repository.trophyList
 import com.android.cdlist.databinding.FragmentCustomImplBinding
 
 class CustomImplFragment : Fragment() {
@@ -24,24 +28,47 @@ class CustomImplFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val customList = binding?.customCentralizedList ?: return
         var page = 0
 
-        val list = levelList
-
-        customList.setItems(list)
+        showList(page)
 
         binding?.btPrev?.setOnClickListener {
-            if (page > 1) {
-                //todo change list
+            if (page > 0) {
                 page--
+                showList(page = page)
             }
         }
 
         binding?.btNext?.setOnClickListener {
-            if (page < 6) {
-                //todo change list
+            if (page < 3) {
                 page++
+                showList(page = page)
+            }
+        }
+    }
+
+    private fun showList(page: Int) {
+        val customList = binding?.customCentralizedList ?: return
+
+        val level = levelList
+        val trophy = trophyList
+        val drop = dropList
+
+        when (page) {
+            0 -> {
+                customList.setItemsWithCoilBlackAndWithe(level)
+            }
+
+            1 -> {
+                customList.setItemsWithGlideBlackAndWithe(trophy)
+            }
+
+            2 -> {
+                customList.setItemsWithGlideBlur(trophy)
+            }
+
+            3 -> {
+                customList.setItemsWithGlideBlackAndWithe(drop)
             }
         }
     }
