@@ -18,6 +18,10 @@
         <action
             android:id="@+id/action_HomeFragment_to_CustomImplFragment"
             app:destination="@id/CustomImplFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_BottomNavigationImplFragment"
+            app:destination="@id/BottomNavigationImplFragment" />
     </fragment>
 
     <fragment
@@ -31,4 +35,10 @@
         android:name="com.android.cdlist.ui.CustomImplFragment"
         android:label="@string/custom_imp_fragment_label"
         tools:layout="@layout/fragment_custom_impl" />
+
+    <fragment
+        android:id="@+id/BottomNavigationImplFragment"
+        android:name="com.android.cdlist.ui.BottomNavigationImplFragment"
+        android:label="@string/custom_imp_fragment_label"
+        tools:layout="@layout/fragment_bottom_navigation_impl" />
 </navigation>

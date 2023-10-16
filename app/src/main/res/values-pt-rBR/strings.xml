@@ -9,6 +9,7 @@
     <string name="home_fragment_label">Centralized Dynamic List</string>
     <string name="basic_impl_fragment_label">Implementação básica</string>
     <string name="custom_imp_fragment_label">Implementação personalizada</string>
+    <string name="bottom_navigation_fragment_label">Implementação Bottom Navigation</string>
 
     <string name="button_less_label">Remover item</string>
     <string name="button_more_label">Adicionar item</string>

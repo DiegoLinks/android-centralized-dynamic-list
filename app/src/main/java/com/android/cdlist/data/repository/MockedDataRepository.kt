@@ -1,5 +1,6 @@
 package com.android.cdlist.data.repository
 
+import com.android.cdlist.data.model.ButtonItem
 import com.android.cdlist.data.model.Item
 
 val medalItem =
@@ -47,3 +48,19 @@ val dropList = mutableListOf(
     dropDisabledItem,
     dropDisabledItem
 )
+
+val simpleButton = ButtonItem(label = "Menu", showLabel = false, labelBottom = false)
+val labelButton = ButtonItem(label = "Menu", showLabel = true, labelBottom = false)
+val topLabelButton = ButtonItem(label = "Menu", showLabel = true, labelBottom = true)
+
+val simpleButtonList =
+    listOf(simpleButton, simpleButton, simpleButton, simpleButton, simpleButton, simpleButton)
+
+val labelButtonList =
+    listOf(labelButton, labelButton, labelButton, labelButton, labelButton)
+
+val topLabelButtonList =
+    listOf(topLabelButton, topLabelButton, topLabelButton, topLabelButton, topLabelButton)
+
+val multipleButtonList =
+    listOf(topLabelButton, labelButton, simpleButton, labelButton, topLabelButton)

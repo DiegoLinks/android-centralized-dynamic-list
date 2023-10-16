@@ -24,7 +24,6 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding?.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -50,6 +49,8 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_HomeFragment_to_BasicImplFragment)
         } else if (route == 1) {
             findNavController().navigate(R.id.action_HomeFragment_to_CustomImplFragment)
+        } else if (route == 2) {
+            findNavController().navigate(R.id.action_HomeFragment_to_BottomNavigationImplFragment)
         }
     }
 }
