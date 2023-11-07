@@ -5,10 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.android.cdlist.component.CustomHorizontalCentralizedList
 import com.android.cdlist.data.repository.dropList
 import com.android.cdlist.data.repository.levelList
-import com.android.cdlist.data.repository.medalList
 import com.android.cdlist.data.repository.trophyList
 import com.android.cdlist.databinding.FragmentCustomImplBinding
 

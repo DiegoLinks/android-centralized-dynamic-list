@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/design_8"
         android:layout_marginVertical="@dimen/design_16"
-        android:text="@string/basic_impl_fragment_content"
+        android:text="@string/bottom_nav_impl_fragment_content"
         android:textColor="@color/dark_gray"
         android:textSize="@dimen/text_size_18"
         app:layout_constraintEnd_toEndOf="parent"

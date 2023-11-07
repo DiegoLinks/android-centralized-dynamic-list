@@ -39,6 +39,6 @@
     <fragment
         android:id="@+id/BottomNavigationImplFragment"
         android:name="com.android.cdlist.ui.BottomNavigationImplFragment"
-        android:label="@string/custom_imp_fragment_label"
+        android:label="@string/bottom_navigation_fragment_label"
         tools:layout="@layout/fragment_bottom_navigation_impl" />
 </navigation>

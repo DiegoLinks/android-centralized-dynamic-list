@@ -10,7 +10,7 @@
     <string name="home_fragment_label">Centralized Dynamic List</string>
     <string name="basic_impl_fragment_label">Basic Implementation</string>
     <string name="custom_imp_fragment_label">Custom Implementation</string>
-    <string name="bottom_navigation_fragment_label">Bottom Navigation Implementation</string>
+    <string name="bottom_navigation_fragment_label">Bottom Navigation Impl</string>
 
     <string name="button_less_label">Remove item</string>
     <string name="button_more_label">Add item</string>
@@ -20,4 +20,5 @@
 
     <string name="basic_impl_fragment_content">Here we have an example with the basic implementation using the HorizontalCentralizedList component to dynamically center items while filling the entire horizontal space.\n\nIn this case, a list is displayed that can have from 0 to 6 items (in this case, there are 5). Regardless of the quantity, the items will always be dynamically centered.\n\nYou can click on the buttons below to increase or decrease the number of items from 1 to 6, to see the possibilities of using the component.</string>
     <string name="custom_impl_fragment_content">Here are examples with some implementations using the CustomHorizontalCentralizedList component. For example, in the first case, there\'s a kind of dynamic level indicator that can be filled dynamically. There\'s a similar use case with trophies, another one with drops, and also effects like black and white and blur.\n\nThese lists can range from 0 to 6, but the code can be combined, for instance, with a RecyclerView to expand the list as needed. The items will always be dynamically centered.\n\nYou can click on the buttons below to switch between the examples.</string>
+    <string name="bottom_nav_impl_fragment_content">Here we have examples with some implementations using the BottomNavigationCentralizedList component. For example, in the first case, a list with buttons containing an icon and a label at the top, a list of buttons with icons and labels at the bottom, a list of buttons with only icons, and a list with various buttons.\n\nThese lists can range from 0 to 6 and can be filled dynamically. The code is open and can be modified according to your needs.\n\nYou can click on the buttons below to switch between the examples.</string>
 </resources>
