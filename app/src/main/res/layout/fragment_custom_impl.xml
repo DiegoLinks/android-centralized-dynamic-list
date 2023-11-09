@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="@dimen/design_16">
 
         <com.android.cdlist.component.CustomHorizontalCentralizedList
             android:id="@+id/custom_centralized_list"

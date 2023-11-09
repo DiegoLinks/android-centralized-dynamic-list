@@ -3,16 +3,12 @@ package com.android.cdlist.component
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
-import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.appcompat.widget.AppCompatImageView
 import com.android.cdlist.R
 import com.android.cdlist.data.model.ButtonItem
-import com.android.cdlist.data.model.Item
 import com.android.cdlist.ui.helper.gone
 import com.android.cdlist.ui.helper.visible
-import com.bumptech.glide.Glide
 
 class BottomNavigationCentralizedList @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
