@@ -4,6 +4,12 @@
     android:layout_height="50dp"
     android:orientation="horizontal">
 
+    <!--- English - Here are the views used in the dynamic button list. You can change
+    the view type or quantity according to your usage needs. -->
+
+    <!--- Português - Aqui estão as views usadas na lista dinâmica de botões,
+    é possível alterar o tipo de view ou a quantidade de acordo com a sua necessidade de uso. -->
+
     <com.android.cdlist.component.CustomButton
         android:id="@+id/bt_1"
         android:layout_width="wrap_content"

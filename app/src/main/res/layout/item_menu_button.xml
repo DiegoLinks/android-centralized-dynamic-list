@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--- English - Here is the button template used in the list of buttons.
+    You can modify the type of button here or create a different type of view as needed. -->
+
+    <!--- Português - Aqui está o modelo de botão usado nas lista de botões, você pode
+    modificar o tipo de botão por aqui ou criar algum tipo de view de acordo com a necessidade. -->
+
     <TextView
         android:id="@+id/tv_menu_top"
         android:layout_width="wrap_content"

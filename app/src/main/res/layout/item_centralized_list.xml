@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
+    <!--- English - Here are the views used in the dynamic list. You can change
+    the view type or quantity according to your usage needs. -->
+
+    <!--- Português - Aqui estão as views usadas na lista dinâmica, é possível alterar
+    o tipo de view ou a quantidade de acordo com a sua necessidade de uso. -->
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_item_1"
         android:layout_width="50dp"

@@ -18,6 +18,13 @@ class BottomNavigationCentralizedList @JvmOverloads constructor(
         LayoutInflater.from(context).inflate(R.layout.item_centralized_bottom_menu, this, true)
     }
 
+    /**
+     * English - Creates a list with views of the item_centralized_bottom_menu. If you change the view type, it is
+     * necessary to update the list type to mutableListOf<TypeOfViewUsed>.
+     *
+     * Português - Cria uma lista com as views de item_centralized_bottom_menu, caso troque o tipo de view é necessário
+     * trocar o tipo da lista mutableListOf<TipoDaViewQueUsar>.
+     */
     private val buttonList = mutableListOf<CustomButton>(
         findViewById(R.id.bt_1),
         findViewById(R.id.bt_2),
@@ -28,6 +35,11 @@ class BottomNavigationCentralizedList @JvmOverloads constructor(
     )
 
     fun setButtons(items: List<ButtonItem>) {
+        /**
+         * English - Hides all views to display a new list based on the received list.
+         *
+         * Português - Faz com que todas as views sejam escondidas, para exibir uma nova lista de acordo com a lista recebida.
+         */
         buttonList.forEach { it.gone() }
 
         for ((index, item) in items.withIndex()) {
@@ -39,6 +51,13 @@ class BottomNavigationCentralizedList @JvmOverloads constructor(
         }
     }
 
+    /**
+     * English - Iterates through the list of items and assembles the list according to the properties of each item.
+     * Makes visible only the quantity of items from the received list.
+     *
+     * Português - Passa pela lista de itens e monta a lista de acordo com as propriedades de cada item.
+     * Torna visível apenas a quantidade de itens da lista recebida.
+     */
     private fun configButton(item: ButtonItem, view: CustomButton) {
         val tvLabel = view.findViewById<TextView>(R.id.tv_menu_top)
         val tvBottomLabel = view.findViewById<TextView>(R.id.tv_menu_bottom)
